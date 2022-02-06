@@ -1,12 +1,32 @@
 <template>
   <div>
-    赛u啊哈打卡世杰客户打算科技大会上宽带何佳啊世杰蝴蝶结好看
+    <work-bench />
+    <el-row :gutter="20">
+      <el-col :span="12">
+        <operation-staff />
+      </el-col>
+      <el-col :span="12">
+        <operation-staff />
+      </el-col>
+      <el-col :span="12">
+        <operation-staff />
+      </el-col>
+      <el-col :span="12">
+        <operation-staff />
+      </el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
+import WorkBench from './components/WorkBench.vue'
+import OperationStaff from './components/OperationStaff.vue'
 export default {
-  name: 'home'
+  name: 'home',
+  components: {
+    WorkBench,
+    OperationStaff
+  }
 }
 </script>
 
